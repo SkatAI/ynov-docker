@@ -1,0 +1,56 @@
+# Ignored Directories
+.ipynb_checkpoints/
+
+# Ignored File Types
+.~lock.*#
+*.xlsx
+*.pkl
+*.json
+*.log
+*.zip
+*.tar.gz
+
+# Ignored Python Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignored Configuration Files
+.env
+.vscode/
+
+# Ignored Miscellaneous Files
+.DS_Store
+Thumbs.db
+
+# specific large datafiles
+data/treesdb_v01.02.sql
+data/treesdb_v01.03.sql.gz
+data/treesdb_v01.04.sql
+data/treesdb_v01.05.sql
+data/treesdb_v01.05.sql.backup
+data/treesdb_v01.06.sql
+data/treesdb_v01.06.sql.backup
+data/treesdb_v01.07.sql
+
+data/treesdb_v02.sql.gz
+# data/treesdb_v03.01.sql.backup
+data/treesdb_v03.sql.gz
+data/treesdb_v04.sql.gz
+
+
+# other
+*.aux
+*.log
+*.out
+*.tex
+
+qr/*.png
+
+latex/
+
+videos/
+docs/02-solutions
+docs/wip
+docs/next.md
