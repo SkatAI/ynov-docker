@@ -14,6 +14,7 @@ plus
 
 - Dockerfile
 - deployer une app dockerisée sur Azure
+- CI/CD
 
 | session | workshop / cours  topic |
 |-------|--------------------------------------------------|
@@ -21,17 +22,19 @@ plus
 | 01.02 | why docker + motivation + images, containers |
 | 01.03 | Install + hello world |
 | 01.04 | docker run: images and containers, ports, hash strings |
-| 02 | recap images, containers |
-| 02 | run ubuntu in a container + linux|
-| 02 | workshop on basic docker commands |
+| 02.01 | recap images, containers |
+| 02.02 | run ubuntu in a container + linux|
+| 02.03 | linux|
+| 02 | lab on basic docker commands + linux avec Ubuntu |
 |-------|--------------------------------------------------|
-| 03 | recap 1st day |
-| 03 | dockerfiles |
-| 03 | main commands, data persistence |
-| 03 | workshop on docker files |
-| 04 | more commands in Dockerfile |
-| 04 | layers |
-| 04 | Dockerfile workshop 2 |
+| 03.01 | recap 1st day |
+| 03.02 | lab alpine + linux + images |
+| 03.03 | dockerfiles |
+| 03 | walthrough on docker files: rebuild nginx  + docker hub + improvements|
+| 03 | lifecycle : whan the files change, update the image | 
+| 04 | more instructions: data persistence, Env vars, CMD and ENTRYPOINT |
+| 04 | multi stage builds, layers, optimizing |
+| 04 | Dockerfile workshop 2: more data science. |
 |-------|--------------------------------------------------|
 | 05 | Big recap on day 1 and 2 |
 | 05 | Dockerfile workshop 3 |
@@ -43,11 +46,32 @@ plus
 | 07 | recap |
 | 07 | let's build an app and productionize it |
 
+lifecycle : https://training.play-with-docker.com/beginner-linux/ 
+show some karhoo Dockerfiles and ask them to live comment
+quick quiz on docker commands ?
+containers are ephemeral and stateless
+at some point add a database
+CI/CD ?
+
 __________________________
 --------------------------
 
-Generalités
+Docker containers vs VMs
 --------------------------
+
+<https://www.docker.com/blog/docker-myths-debunked/>
+
+Docker containers are often mistaken for virtual machines (VMs), but the technologies operate quite differently. Unlike VMs, Docker containers don’t include an entire operating system (OS). Instead, they share the host operating system kernel, making them more lightweight and efficient. VMs require a hypervisor to create virtual hardware for the guest OS, which introduces significant overhead. Docker only packages the application and its dependencies, allowing for faster startup times and minimal performance overhead.
+
+By utilizing the host operating system’s resources efficiently, Docker containers use fewer resources overall than VMs, which need substantial resources to run multiple operating systems concurrently. Docker’s architecture efficiently runs numerous isolated applications on a single host, optimizing infrastructure and development workflows. Understanding this distinction is crucial for maximizing Docker’s lightweight and scalable potential.
+
+However, when running on non-Linux systems, Docker needs to emulate a Linux environment. For example, Docker Desktop uses a fully managed VM to provide a consistent experience across Windows, Mac, and Linux by running its Linux components inside this VM.
+
+see <https://miro.medium.com/v2/resize:fit:1400/format:webp/1*2OyPjmh9VqKMVuajPk0fEQ.jpeg>
+
+see also
+
+<https://medium.com/datadriveninvestor/docker-f0b8df21f003>
 
 __________________________
 --------------------------
