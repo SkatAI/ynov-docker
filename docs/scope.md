@@ -51,6 +51,7 @@ show some karhoo Dockerfiles and ask them to live comment
 quick quiz on docker commands ?
 containers are ephemeral and stateless
 at some point add a database
+dockerignore
 CI/CD ?
 
 __________________________
