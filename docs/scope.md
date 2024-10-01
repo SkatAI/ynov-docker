@@ -20,8 +20,8 @@
 | 01.04 | docker run: images and containers, ports, hash strings | ✅ |
 |-------|-----------------------|----------|
 | 02.01 | recap et intro | ✅ |
-| 02.02 | run ubuntu in a container + linux| - |
-| 02.03 | linux| - |
+| 02.02 | run ubuntu in a container + linux| ✅ |
+| 02.03 | linux| ✅ |
 | 02 | lab on basic docker commands + linux avec Ubuntu | - |
 |-------|-----------------------|----------|
 | 03.01 | recap 1st day | - |
