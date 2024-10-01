@@ -15,11 +15,11 @@
 | session | workshop / cours  topic | status |
 |-------|-----------------------|----------|
 | 01.01 | intro cours + quizz | ✅ |
-| 01.02 | why docker + motivation + images, containers | - |
+| 01.02 | why docker + motivation + images, containers | ✅  |
 | 01.03 | Install + hello world | - |
-| 01.04 | docker run: images and containers, ports, hash strings | - |
+| 01.04 | docker run: images and containers, ports, hash strings | ✅ |
 |-------|-----------------------|----------|
-| 02.01 | recap images, containers | - |
+| 02.01 | recap et intro | ✅ |
 | 02.02 | run ubuntu in a container + linux| - |
 | 02.03 | linux| - |
 | 02 | lab on basic docker commands + linux avec Ubuntu | - |
