@@ -10,49 +10,76 @@
 
 - Maîtriser les notions réseaux de Docker
 
-plus
+## En détail
 
-- Dockerfile
-- deployer une app dockerisée sur Azure
+| session | workshop / cours  topic | status |
+|-------|-----------------------|----------|
+| 01.01 | intro cours + quizz | ✅ |
+| 01.02 | why docker + motivation + images, containers | - |
+| 01.03 | Install + hello world | - |
+| 01.04 | docker run: images and containers, ports, hash strings | - |
+|-------|-----------------------|----------|
+| 02.01 | recap images, containers | - |
+| 02.02 | run ubuntu in a container + linux| - |
+| 02.03 | linux| - |
+| 02 | lab on basic docker commands + linux avec Ubuntu | - |
+|-------|-----------------------|----------|
+| 03.01 | recap 1st day | - |
+| 03.02 | lab alpine + linux + images | - |
+| 03.03 | dockerfiles | - |
+| 03 | Walkthrough on docker files: rebuild nginx  + docker hub + improvements| - |
+| 03 | lifecycle : when the files change, update the image | - |
+|-------|-----------------------|----------|
+| 04 | more instructions: data persistence, Env vars, CMD and ENTRYPOINT | - |
+| 04 | multi stage builds, layers, optimizing | - |
+| 04 | Dockerfile workshop 2: more data science. | - |
+|-------|-----------------------|----------|
+| 05 | Big recap on day 1 and 2 | - |
+| 05 | Dockerfile workshop 3 | - |
+| 05 | Docker compose | - |
+| 06 | Workshop on Docker compose | - |
+| 06 | Docker compose II: more advanced  | - |
+| 06 | Workshop on Docker compose II | - |
+|-------|-----------------------|----------|
+| 07 | recap | - |
+|-------|-----------------------|----------|
+| 08 | projet | - |
+
+## Ideas
+
+- show some karhoo Dockerfiles and ask them to live comment
+
+- lifecycle : <https://training.play-with-docker.com/beginner-linux/> ... exercice ... mysql
+- data persistence;  containers are ephemeral and stateless
+- dockerignore
+
+## Posts and sources
+
 - CI/CD
+- deployer une app dockerisée sur Azure
+  - <https://medium.com/@dmosyan/pros-and-cons-of-azure-app-service-for-containers-81f4ca1fbf85>
+- Docker secrets
+  - <https://medium.com/@younusraza909/docker-secrets-beginners-guide-73f0b60764aa>
 
-| session | workshop / cours  topic |
-|-------|--------------------------------------------------|
-| 01.01 | intro cours + quizz |
-| 01.02 | why docker + motivation + images, containers |
-| 01.03 | Install + hello world |
-| 01.04 | docker run: images and containers, ports, hash strings |
-| 02.01 | recap images, containers |
-| 02.02 | run ubuntu in a container + linux|
-| 02.03 | linux|
-| 02 | lab on basic docker commands + linux avec Ubuntu |
-|-------|--------------------------------------------------|
-| 03.01 | recap 1st day |
-| 03.02 | lab alpine + linux + images |
-| 03.03 | dockerfiles |
-| 03 | walthrough on docker files: rebuild nginx  + docker hub + improvements|
-| 03 | lifecycle : whan the files change, update the image | 
-| 04 | more instructions: data persistence, Env vars, CMD and ENTRYPOINT |
-| 04 | multi stage builds, layers, optimizing |
-| 04 | Dockerfile workshop 2: more data science. |
-|-------|--------------------------------------------------|
-| 05 | Big recap on day 1 and 2 |
-| 05 | Dockerfile workshop 3 |
-| 05 | Docker compose |
-| 06 | Workshop on Docker compose |
-| 06 | Docker compose II: more advanced  |
-| 06 | Workshop on Docker compose II |
-|-------|--------------------------------------------------|
-| 07 | recap |
-| 07 | let's build an app and productionize it |
+- Reducing image size, build time
+  - <https://medium.com/datamindedbe/how-we-reduced-our-docker-build-times-by-40-afea7b7f5fe7>
 
-lifecycle : https://training.play-with-docker.com/beginner-linux/ 
-show some karhoo Dockerfiles and ask them to live comment
-quick quiz on docker commands ?
-containers are ephemeral and stateless
-at some point add a database
-dockerignore
-CI/CD ?
+- choosing the right base image
+  - <https://medium.com/@arif.rahman.rhm/choosing-the-right-python-docker-image-slim-buster-vs-alpine-vs-slim-bullseye-5586bac8b4c9>
+
+- hashing ou encryption
+  - <https://iorilan.medium.com/a-basic-question-in-security-interview-how-do-you-store-passwords-in-the-database-676c125cff64>
+
+### Use cases
+
+Containeriser une base de donnée
+
+- postgres <https://medium.com/@nathaliafriederichs/setting-up-a-postgresql-environment-in-docker-a-step-by-step-guide-55cbcb1061ba>
+- mysql <https://medium.com/towards-data-engineering/dockerize-your-databases-a-step-by-step-guide-to-mysql-containerization-8dc2deabeebd>
+
+Docker to server LLM
+
+- <https://towardsdatascience.com/reducing-the-size-of-docker-images-serving-llm-models-b70ee66e5a76>
 
 __________________________
 --------------------------

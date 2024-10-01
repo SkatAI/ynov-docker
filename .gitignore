@@ -24,9 +24,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+.obsidian
+
 next.md
 docs/wip
 docs/next.md
 docs/prompts.md
 
-ynov-docker-vault
