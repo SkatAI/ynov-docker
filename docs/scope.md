@@ -22,7 +22,7 @@
 | 02.01 | recap et intro | ✅ |
 | 02.02 | run ubuntu in a container + linux| ✅ |
 | 02.03 | linux| ✅ |
-| 02 | lab on basic docker commands + linux avec Ubuntu | - |
+| 02 | lab on basic docker commands + linux avec Ubuntu | ✅ |
 |-------|-----------------------|----------|
 | 03.01 | recap 1st day | - |
 | 03.02 | lab alpine + linux + images | - |
