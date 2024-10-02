@@ -5,7 +5,7 @@
 Docker volumes are a way to persist data generated and used by Docker containers.
 
 excellent walkthrough creating a volume for a mysql database
-creraing a container using that volume
+creating a container using that volume
 connecting to the db ...
 rm container
 create anothe one with same colume

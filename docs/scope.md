@@ -24,7 +24,7 @@
 | 02.03 | linux| ✅ |
 | 02 | lab on basic docker commands + linux avec Ubuntu | ✅ |
 |-------|-----------------------|----------|
-| 03.01 | recap 1st day | - |
+| 03.01 | recap 1st day | ✅ |
 | 03.02 | lab alpine + linux + images | - |
 | 03.03 | dockerfiles | - |
 | 03 | Walkthrough on docker files: rebuild nginx  + docker hub + improvements| - |
