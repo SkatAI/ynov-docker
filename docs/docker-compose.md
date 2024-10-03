@@ -1,6 +1,9 @@
 
 # Chapter: Docker Compose - Managing Multi-Container Applications
 
+2. Docker Compose for multi-container applications:
+Guide students through creating a Docker Compose file for a simple web application with separate containers for the frontend, backend, and database. This demonstrates how to manage multi-container applications and define service dependencies.
+
 ## Links and tutorials
 
 bon exemple de hello world avec docker compose
