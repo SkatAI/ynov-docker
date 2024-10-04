@@ -1,0 +1,19 @@
+FROM ubuntu:latest
+
+# Install nginx and wget
+RUN apt-get update && apt-get install -y nginx wget
+
+# Expose port 80
+EXPOSE 80
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Copy local index.html to the container
+COPY index.html /var/www/html/
+
+# Copy nginx configuration
+COPY nginx.local.conf /etc/nginx/nginx.conf
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
