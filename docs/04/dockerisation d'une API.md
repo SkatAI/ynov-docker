@@ -109,7 +109,12 @@ Now, your Flask app will be accessible at `http://localhost:5000` and will retur
 3. **`COPY`**: Copies files from the host machine to the container.
 4. **`RUN`**
 
+changer le code => besoin ed rebuild l'image
+ca fait vite beaucoup d'image
+
 To avoid rebuilding the Docker image every time you change the code, you can mount your local code directory into the running Docker container. This way, any changes made to the code are immediately reflected inside the container, without needing to rebuild the image.
+
+## Volume
 
 Here's how you can do it:
 

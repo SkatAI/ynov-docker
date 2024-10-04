@@ -27,14 +27,14 @@
 | 03.01 | recap 1st day | ✅ |
 | 03.02 | TD alpine + linux + images | ✅ |
 | 03.03 | Publish on Docker hub | ✅ |
-| 03.04 | dockerfiles | - |
-| 03 | Walkthrough on docker files: rebuild nginx  + docker hub + improvements| - |
-| 03 | build an API over simple python function |
+| 03.04 | dockerfiles | ✅ |
+| 03.05 | build an API python : requirements.txt, .gitignore, VOLUME |
 | 03 | lifecycle : when the files change, update the image | - |
 |-------|-----------------------|----------|
 | 04 | more instructions: data persistence, Env vars, CMD and ENTRYPOINT | - |
+| 04 | versions des images: slim, latest, bulls ... | - |
 | 04 | multi stage builds, layers, optimizing | - |
-| 04 | Dockerfile workshop 2: more data science. | - |
+| 04 | Dockerfile workshop 2: more data science. secret vars API ket OpenAI| - |
 |-------|-----------------------|----------|
 | 05 | Big recap on day 1 and 2 | - |
 | 05 | Dockerfile workshop 3 | - |
@@ -54,6 +54,7 @@
 - lifecycle : <https://training.play-with-docker.com/beginner-linux/> ... exercice ... mysql
 - data persistence;  containers are ephemeral and stateless
 - dockerignore
+- deploy on Azure: <https://learn.microsoft.com/en-us/azure/developer/python/tutorial-deploy-python-web-app-azure-container-apps-02?tabs=azure-cli%2Ccreate-database-psql>
 
 ## Posts and sources
 
