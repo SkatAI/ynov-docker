@@ -25,8 +25,9 @@
 | 02 | lab on basic docker commands + linux avec Ubuntu | ✅ |
 |-------|-----------------------|----------|
 | 03.01 | recap 1st day | ✅ |
-| 03.02 | TD alpine + linux + images | - |
-| 03.03 | dockerfiles | - |
+| 03.02 | TD alpine + linux + images | ✅ |
+| 03.03 | Publish on Docker hub | ✅ |
+| 03.04 | dockerfiles | - |
 | 03 | Walkthrough on docker files: rebuild nginx  + docker hub + improvements| - |
 | 03 | build an API over simple python function |
 | 03 | lifecycle : when the files change, update the image | - |
