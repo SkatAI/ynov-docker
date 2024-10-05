@@ -28,10 +28,10 @@
 | 03.02 | TD alpine + linux + images | ✅ |
 | 03.03 | Publish on Docker hub | ✅ |
 | 03.04 | dockerfiles | ✅ |
-| 03.05 | build an API python : requirements.txt, .gitignore, VOLUME |
-| 03 | lifecycle : when the files change, update the image | - |
+| 03.05 | build an API python : requirements.txt, .gitignore, VOLUME | ✅ |
 |-------|-----------------------|----------|
-| 04 | more instructions: data persistence, Env vars, CMD and ENTRYPOINT | - |
+| 04 | intro | - |
+| 04 | more instructions: Env vars, CMD and ENTRYPOINT | - |
 | 04 | versions des images: slim, latest, bulls ... | - |
 | 04 | multi stage builds, layers, optimizing | - |
 | 04 | Dockerfile workshop 2: more data science. secret vars API ket OpenAI| - |
