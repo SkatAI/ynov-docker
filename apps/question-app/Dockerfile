@@ -1,5 +1,5 @@
 # Use the official Python image from the Docker Hub
-FROM python:3.9-slim
+FROM python:3.12-slim
 
 # Set the working directory
 WORKDIR /app
@@ -17,8 +17,8 @@ COPY . /app/
 EXPOSE 8501
 
 # Environment variable to avoid running as root
-ENV STREAMLIT_SERVER_RUN_ON_DEVICE=0
+# ENV STREAMLIT_SERVER_RUN_ON_DEVICE=0
 
 # Start the app
-CMD ["streamlit", "run", "app.py", "--server.enableCORS", "false"]
+CMD ["streamlit", "run", "app.py", "--logger.level", "debug"]
 

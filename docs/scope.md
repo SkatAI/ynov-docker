@@ -30,12 +30,11 @@
 | 03.04 | dockerfiles | ✅ |
 | 03.05 | build an API python : requirements.txt, .gitignore, VOLUME | ✅ |
 |-------|-----------------------|----------|
-| 04 | intro | - |
-| 04 | more instructions: Env vars, CMD and ENTRYPOINT | - |
-| 04 | versions des images: slim, latest, bulls ... | - |
-| 04 | multi stage builds, layers, optimizing | - |
-| 04 | Dockerfile workshop 2: more data science. secret vars API ket OpenAI| - |
+| 04 | intro | ✅  |
+| 04 | optimizing, layers, cache, subtleties, choosing images | ✅  |
+| 04 | Dockerfile workshop 2: Question app with OpenAI | - |
 |-------|-----------------------|----------|
+| 04 | multi stage builds, | - |
 | 05 | Big recap on day 1 and 2 | - |
 | 05 | Dockerfile workshop 3 | - |
 | 05 | Docker compose | - |
@@ -58,7 +57,12 @@
 
 ## Posts and sources
 
+- multi stage builds
+what is the advantage of multi-stage builds over docker compose
+see <https://claude.ai/chat/dfdf46cb-7a51-4f3f-9650-2de92e4ec424>
+
 - CI/CD
+
 - deployer une app dockerisée sur Azure
   - <https://medium.com/@dmosyan/pros-and-cons-of-azure-app-service-for-containers-81f4ca1fbf85>
 - Docker secrets

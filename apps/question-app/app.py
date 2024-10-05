@@ -22,6 +22,7 @@ with open('character_prompts.json', 'r') as file:
 
 # Streamlit UI
 st.title("Ask a Question to a Character")
+st.header("Le personnage vous répondra ")
 
 # Select a character
 character = st.selectbox("Choose a character:", list(character_prompts.keys()))

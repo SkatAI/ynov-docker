@@ -8,5 +8,3 @@ This approach to keeping Docker images small is using multistage builds
 
 voir
 <https://www.metricfire.com/blog/how-to-build-optimal-docker-images/>
-
-# Optimiser une image
