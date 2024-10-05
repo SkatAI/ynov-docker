@@ -13,9 +13,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the current directory contents into the container
 COPY . /app/
 
-# Copy .env separately to avoid caching it during build steps
-COPY .env /app/
-
 # Expose the Streamlit default port
 EXPOSE 8501
 
