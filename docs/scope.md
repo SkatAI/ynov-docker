@@ -32,7 +32,7 @@
 |-------|-----------------------|----------|
 | 04 | intro | ✅  |
 | 04 | optimizing, layers, cache, subtleties, choosing images | ✅  |
-| 04 | Dockerfile workshop 2: Question app with OpenAI | - |
+| 04 | Dockerfile workshop 2: Question app with OpenAI | proof read |
 |-------|-----------------------|----------|
 | 04 | multi stage builds, | - |
 | 05 | Big recap on day 1 and 2 | - |
