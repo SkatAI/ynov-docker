@@ -5,7 +5,7 @@
 .~lock.*#
 *.xlsx
 *.pkl
-*.json
+
 *.log
 *.zip
 *.tar.gz
