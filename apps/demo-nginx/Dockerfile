@@ -1,20 +1,20 @@
+# Les instructions à écrire dans le fichier Dockerfile sont :
+
+# - A partir de Ubuntu (FROM)
+# - installer nginx et wget (RUN)
+# - Exposer le port 80 (EXPOSE)
+# - créer un repertoire  `/var/www/html` (WORKDIR)
+# - copier le fichier `index.html` dans `/var/www/html/` (COPY)
+# - copier `nginx.local.conf` dans `/etc/nginx/nginx.conf` (COPY)
+# - run nginx avec : `nginx -g daemon off` (CMD)
+
 FROM ubuntu:latest
-
-# Install nginx and wget
-RUN apt-get update && apt-get install -y nginx wget
-
-# Expose port 80
+RUN apt-get update && apt-get -y install nginx
 EXPOSE 80
 
-# Set working directory
 WORKDIR /var/www/html
-
-# Copy local index.html to the container
-COPY index.html /var/www/html/
-
-# Copy nginx configuration
+COPY ./index.html /var/www/html/
 COPY nginx.local.conf /etc/nginx/nginx.conf
 
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+CMD "nginx -g daemon off"
 
