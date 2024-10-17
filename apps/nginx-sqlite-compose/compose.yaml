@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./html:/usr/share/nginx/html
+    depends_on:
+      - sqlite
+
+  sqlite:
+    image: keinos/sqlite3:latest
+
+    # v0
+    # volumes:
+    #   - ./data:/data
+    # command: /bin/sh -c "while true; do sleep 1; done"
+
+    # v1
+    volumes:
+        - ./data:/data
+        - ./init.sql:/init.sql
+    command: >
+        /bin/sh -c "
+          sqlite3 /data/mydatabase.db < /init.sql &&
+          while true; do sleep 1; done
+        "
+    # environment:
+    #   - SQLITE_DATABASE=your_database.db

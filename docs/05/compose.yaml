@@ -1,0 +1,17 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+    environment:
+      - NGINX_HOST=example.com
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: postgres:13
+    volumes:
+      - db-data:/var/lib/postgresql/data
