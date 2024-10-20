@@ -34,17 +34,32 @@
 | 04.02 | optimizing, layers, cache, subtleties, choosing images | ✅  |
 | 04.03 | Dockerfile workshop 2: Question app with OpenAI | ✅  |
 |-------|-----------------------|----------|
-| 05 | Recap on day 1 and 2 | - |
-| 05 | Build a Dockerfile TD 3, small, warm up | - |
-| 05 | Docker compose | - |
+| 05.01 | Quick Recap on day 1 and 2: Dockerfiles | ⚙️⚙️ |
+| 05.02 | Docker Compose | ⚙️⚙️ |
+| 05.03 | Demo: Nginx, SQLite, Vue | - |
+| 05 | exemples: airflow | - |
+| 05 | exercice: wordpress, PostgreSQL | - |
 |-------|-----------------------|----------|
-| 06 | Workshop on Docker compose | - |
-| 06 | Docker compose II: more advanced  | - |
-| 06 | Workshop on Docker compose II | - |
+| 05 | CI/CD, github actions | - |
+| 06 | Workshop on Docker compose : bot discord | - |
+| 06 | exit ticket | - |
 |-------|-----------------------|----------|
 | 07 | recap | - |
 |-------|-----------------------|----------|
 | 08 | projet | - |
+
+Faire tourner plusieurs containers avec docker composer a partir d'un fichier `compose.yaml`
+
+- overview docker compose
+- cas d'utilisation et benefices
+- elements du `compose.yaml`: services, network, volumes
+- commandes CLI et flags
+- demo : nginx, sqlite, vue
+- exercice : wordpress, postgresql: ecrire le compose.yaml et le faire tourner
+- suite: déploiement, secrets, config, restart
+- exemples: Minecraft, airflow,
+- integration dans un pipeline CI/CD
+- projet : bot discord
 
 ## Maybe
 
