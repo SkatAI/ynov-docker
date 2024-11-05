@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <!-- Host Machine -->
+  <rect x="50" y="20" width="300" height="160" rx="10" fill="#f0f0f0" stroke="#666"/>
+  <text x="60" y="45" font-family="Arial" font-size="14">Host Machine</text>
+  
+  <!-- Docker Engine -->
+  <rect x="70" y="60" width="260" height="100" rx="5" fill="#2496ED" fill-opacity="0.2" stroke="#2496ED"/>
+  <text x="80" y="85" font-family="Arial" font-size="14" fill="#2496ED">Docker Engine</text>
+  
+  <!-- Container -->
+  <rect x="150" y="100" width="100" height="40" rx="5" fill="#2496ED" stroke="#2496ED"/>
+  <text x="170" y="125" font-family="Arial" font-size="12" fill="white">Container</text>
+</svg>

@@ -5,6 +5,10 @@ import subprocess
 import discord
 from discord import app_commands
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
 # le TOKEN
 
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -21,7 +25,6 @@ logger = logging.getLogger('discord_bot')
 
 intents = discord.Intents.default()
 intents.message_content = True
-
 
 # Class principale
 class MyBot(discord.Client):

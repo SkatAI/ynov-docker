@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background for Control Plane -->
+  <rect x="50" y="20" width="700" height="280" rx="10" fill="#FFE7BA" stroke="#666"/>
+  <text x="60" y="45" font-family="Arial" font-size="16" font-weight="bold">Control Plane</text>
+  
+  <!-- API Server Central -->
+  <rect x="300" y="60" width="200" height="100" rx="5" fill="#FFA500" stroke="#666"/>
+  <text x="350" y="90" font-family="Arial" font-size="14" font-weight="bold">API Server</text>
+  <text x="320" y="110" font-family="Arial" font-size="12">- Authentication</text>
+  <text x="320" y="130" font-family="Arial" font-size="12">- Authorization</text>
+  <text x="320" y="150" font-family="Arial" font-size="12">- Validation</text>
+  
+  <!-- etcd -->
+  <rect x="70" y="180" width="160" height="100" rx="5" fill="#FFA500" stroke="#666"/>
+  <text x="120" y="210" font-family="Arial" font-size="14" font-weight="bold">etcd</text>
+  <text x="90" y="230" font-family="Arial" font-size="12">- Cluster State</text>
+  <text x="90" y="250" font-family="Arial" font-size="12">- Configuration</text>
+  <text x="90" y="270" font-family="Arial" font-size="12">- Metadata</text>
+  
+  <!-- Controller Manager -->
+  <rect x="250" y="180" width="160" height="100" rx="5" fill="#FFA500" stroke="#666"/>
+  <text x="270" y="210" font-family="Arial" font-size="14" font-weight="bold">Controller Manager</text>
+  <text x="270" y="230" font-family="Arial" font-size="12">- Node Controller</text>
+  <text x="270" y="250" font-family="Arial" font-size="12">- Replication</text>
+  <text x="270" y="270" font-family="Arial" font-size="12">- Endpoints</text>
+  
+  <!-- Scheduler -->
+  <rect x="430" y="180" width="160" height="100" rx="5" fill="#FFA500" stroke="#666"/>
+  <text x="475" y="210" font-family="Arial" font-size="14" font-weight="bold">Scheduler</text>
+  <text x="450" y="230" font-family="Arial" font-size="12">- Pod Assignment</text>
+  <text x="450" y="250" font-family="Arial" font-size="12">- Resource Tracking</text>
+  <text x="450" y="270" font-family="Arial" font-size="12">- Constraints</text>
+  
+  <!-- Cloud Controller Manager -->
+  <rect x="610" y="180" width="160" height="100" rx="5" fill="#FFA500" stroke="#666"/>
+  <text x="630" y="210" font-family="Arial" font-size="14" font-weight="bold">Cloud Controller</text>
+  <text x="630" y="230" font-family="Arial" font-size="12">- Node Lifecycle</text>
+  <text x="630" y="250" font-family="Arial" font-size="12">- Route Management</text>
+  <text x="630" y="270" font-family="Arial" font-size="12">- Service Integration</text>
+  
+  <!-- Worker Nodes Section -->
+  <rect x="50" y="320" width="700" height="260" rx="10" fill="#f0f0f0" stroke="#666"/>
+  <text x="60" y="345" font-family="Arial" font-size="16" font-weight="bold">Worker Nodes</text>
+  
+  <!-- Worker Node 1 -->
+  <rect x="70" y="360" width="320" height="200" rx="5" fill="#326CE5" fill-opacity="0.1" stroke="#326CE5"/>
+  <text x="80" y="385" font-family="Arial" font-size="14">Worker Node 1</text>
+  
+  <!-- Kubelet -->
+  <rect x="90" y="400" width="140" height="140" rx="5" fill="#326CE5" fill-opacity="0.2" stroke="#326CE5"/>
+  <text x="130" y="425" font-family="Arial" font-size="14">kubelet</text>
+  <text x="100" y="445" font-family="Arial" font-size="12">- Pod Management</text>
+  <text x="100" y="465" font-family="Arial" font-size="12">- Container Runtime</text>
+  <text x="100" y="485" font-family="Arial" font-size="12">- Node Agent</text>
+  
+  <!-- Kube Proxy -->
+  <rect x="240" y="400" width="140" height="140" rx="5" fill="#326CE5" fill-opacity="0.2" stroke="#326CE5"/>
+  <text x="270" y="425" font-family="Arial" font-size="14">kube-proxy</text>
+  <text x="250" y="445" font-family="Arial" font-size="12">- Network Rules</text>
+  <text x="250" y="465" font-family="Arial" font-size="12">- Load Balancing</text>
+  <text x="250" y="485" font-family="Arial" font-size="12">- Service Routing</text>
+  
+  <!-- Worker Node 2 -->
+  <rect x="410" y="360" width="320" height="200" rx="5" fill="#326CE5" fill-opacity="0.1" stroke="#326CE5"/>
+  <text x="420" y="385" font-family="Arial" font-size="14">Worker Node 2</text>
+  
+  <!-- Kubelet -->
+  <rect x="430" y="400" width="140" height="140" rx="5" fill="#326CE5" fill-opacity="0.2" stroke="#326CE5"/>
+  <text x="470" y="425" font-family="Arial" font-size="14">kubelet</text>
+  <text x="440" y="445" font-family="Arial" font-size="12">- Pod Management</text>
+  <text x="440" y="465" font-family="Arial" font-size="12">- Container Runtime</text>
+  <text x="440" y="485" font-family="Arial" font-size="12">- Node Agent</text>
+  
+  <!-- Kube Proxy -->
+  <rect x="580" y="400" width="140" height="140" rx="5" fill="#326CE5" fill-opacity="0.2" stroke="#326CE5"/>
+  <text x="610" y="425" font-family="Arial" font-size="14">kube-proxy</text>
+  <text x="590" y="445" font-family="Arial" font-size="12">- Network Rules</text>
+  <text x="590" y="465" font-family="Arial" font-size="12">- Load Balancing</text>
+  <text x="590" y="485" font-family="Arial" font-size="12">- Service Routing</text>
+  
+  <!-- Connection Lines -->
+  <path d="M400 160 L150 180" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M400 160 L330 180" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M400 160 L510 180" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M400 160 L690 180" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Connections to Worker Nodes -->
+  <path d="M400 280 L230 360" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M400 280 L570 360" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
