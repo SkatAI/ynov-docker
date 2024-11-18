@@ -1,4 +1,5 @@
 # Kubernetes Workshop for Docker Users
+
 Duration: 4 hours (can be split into 2 sessions)
 
 - [Kubernetes Workshop for Docker Users](#kubernetes-workshop-for-docker-users)
@@ -22,8 +23,6 @@ Duration: 4 hours (can be split into 2 sessions)
   - [Tips for Instructors](#tips-for-instructors)
 - [homelab](#homelab)
 
-
-
 ## Prerequisites
 
 - Docker and Docker Compose installed
@@ -42,6 +41,7 @@ Duration: 4 hours (can be split into 2 sessions)
 ## Module 1: From Docker Compose to Kubernetes (45 minutes)
 
 ### Hands-on Exercise: Converting Docker Compose to Kubernetes
+
 Start with a familiar Docker Compose application:
 
 ```yaml
@@ -56,6 +56,7 @@ services:
 ```
 
 Convert to equivalent Kubernetes manifests:
+
 ```yaml
 # deployment-web.yaml
 apiVersion: apps/v1
@@ -89,13 +90,16 @@ spec:
     app: web
 ```
 
-### Practice Tasks:
+### Practice Tasks
+
 1. Deploy both versions
 2. Compare commands and outputs
 3. Identify key differences
 
 ## Module 2: Kubernetes Core Concepts (60 minutes)
-### Interactive Exercises:
+
+### Interactive Exercises
+
 1. **Pod Lifecycle**
    - Create a pod manually
    - Observe states
@@ -112,7 +116,9 @@ spec:
    - Test connectivity
 
 ## Module 3: Configuration and State (45 minutes)
-### Hands-on Projects:
+
+### Hands-on Projects
+
 1. **ConfigMaps**
    - Create from files and literals
    - Mount as volumes
@@ -129,14 +135,18 @@ spec:
    - StatefulSet basics
 
 ## Module 4: Real-world Application (75 minutes)
-### Final Project:
+
+### Final Project
+
 Build a multi-tier application with:
+
 - Frontend (Nginx)
 - Backend API (Node.js/Python)
 - Database (MongoDB)
 - Redis cache
 
-### Implementation Steps:
+### Implementation Steps
+
 1. Start with Docker Compose version
 2. Convert to Kubernetes manifests
 3. Add health checks
@@ -145,44 +155,49 @@ Build a multi-tier application with:
 6. Set up internal networking
 
 ## Debugging Section (30 minutes)
+
 Common Issues and Solutions:
+
 1. Pod startup failures
 2. Service networking issues
 3. Storage problems
 4. Resource constraints
 
 ## Workshop Materials
-### Required Files:
+
+### Required Files
+
 - Sample applications
 - Solution files
 - Troubleshooting guide
 - Commands cheatsheet
 
-### Student Resources:
+### Student Resources
+
 - Workshop slides
 - Exercise instructions
 - Reference architecture diagrams
 - Best practices guide
 
 ## Follow-up Projects
+
 Independent exercises for students:
+
 1. Add monitoring with Prometheus
 2. Implement basic CI/CD
 3. Configure horizontal pod autoscaling
 4. Set up development namespaces
 
 ## Tips for Instructors
+
 1. Pre-verify all installations
 2. Have backup cluster ready
 3. Prepare common error solutions
 4. Set resource limits in Minikube
 
-
 # homelab
 
 --- Yes, you can create a Kubernetes cluster using your laptops as nodes. This is often called a "homelab" cluster. I'll explain how this typically works.
-
-
 
 ```bash
 #!/bin/bash
@@ -244,12 +259,14 @@ Here's how you can set this up:
    - Static IP addresses
 
 Key setup steps:
+
 1. Run the prerequisite installation script on all laptops
 2. Initialize the master node
 3. Join worker nodes to the cluster
 4. Install a network plugin (like Flannel)
 
 Important considerations:
+
 - All laptops must be on the same network
 - Ensure consistent network connectivity
 - Use static IP addresses for reliability
@@ -257,8 +274,6 @@ Important considerations:
 
 Would you like me to explain any specific part of the setup in more detail?
 I'll show you how to set up static IP addresses on different operating systems.
-
-
 
 ```bash
 # Ubuntu/Debian (Using Netplan)
@@ -326,8 +341,6 @@ Here's how to set up static IPs:
 Would you like me to explain how to find your current network settings on any particular operating system?
 
 Let me explain the types of applications that benefit from a home Kubernetes cluster.
-
-
 
 ```yaml
 # Example distributed application deployment
@@ -462,19 +475,19 @@ Here are the types of applications that would benefit from such a setup:
 
 4. Specific Application Examples:
    - Distributed web applications with:
-     * Load-balanced frontend
-     * Scalable backend API
-     * Database with persistent storage
+     - Load-balanced frontend
+     - Scalable backend API
+     - Database with persistent storage
    - Machine learning pipelines:
-     * Distributed training jobs
-     * Model serving
+     - Distributed training jobs
+     - Model serving
    - Media processing:
-     * Video transcoding
-     * Image processing pipeline
+     - Video transcoding
+     - Image processing pipeline
    - IoT applications:
-     * Data collection
-     * Real-time processing
-     * Sensor data aggregation
+     - Data collection
+     - Real-time processing
+     - Sensor data aggregation
 
 The main benefits of such a setup are:
 
@@ -495,10 +508,7 @@ The main benefits of such a setup are:
 
 Would you like me to elaborate on any of these use cases or show you how to deploy a specific type of application?
 
-
 Yes, absolutely! We can set up monitoring across all nodes using Prometheus and node-exporter to collect metrics.
-
-
 
 ```yaml
 # Create a monitoring namespace
@@ -648,12 +658,13 @@ This setup will collect various metrics from each laptop/node, including:
 To implement this:
 
 1. Deploy the monitoring stack:
+
 ```bash
 kubectl apply -f monitoring-setup.yaml
 ```
 
 2. Access the metrics:
-   - Prometheus UI: http://any-node-ip:30900
+   - Prometheus UI: <http://any-node-ip:30900>
    - Query metrics using PromQL
 
 Common useful metrics to monitor:
@@ -673,6 +684,7 @@ rate(node_network_receive_bytes_total[5m])
 ```
 
 Would you like me to:
+
 1. Show how to set up a visualization dashboard with Grafana?
 2. Explain how to create custom metrics for your specific needs?
 3. Demonstrate how to set up alerts based on these metrics?
